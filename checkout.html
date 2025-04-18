@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra - Renovando Laços</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Renovando Laços</h1>
+                <p>Conselhos para Reconciliação de Relacionamentos</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="carrinho.html" class="active btn-carrinho"><i class="fas fa-shopping-cart"></i> Carrinho</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Finalizar Compra</h1>
+            <p>Complete seu pedido e receba o e-book "Caminhos para a Reconciliação"</p>
+        </div>
+    </section>
+
+    <section class="checkout">
+        <div class="container">
+            <div class="checkout-container">
+                <div class="checkout-product">
+                    <h2>Seu Pedido</h2>
+                    <div class="product-details">
+                        <div class="product-image">
+                            <img src="images/ebook-cover.jpg" alt="E-book Caminhos para a Reconciliação">
+                        </div>
+                        <div class="product-info">
+                            <h3>E-book: Caminhos para a Reconciliação</h3>
+                            <p class="product-description">Um guia completo com as estratégias mais eficazes para superar crises e renovar o amor em seu relacionamento.</p>
+                            <ul class="product-features">
+                                <li><i class="fas fa-check"></i> 8 capítulos detalhados</li>
+                                <li><i class="fas fa-check"></i> Exercícios práticos</li>
+                                <li><i class="fas fa-check"></i> Plano de 30 dias para renovação</li>
+                                <li><i class="fas fa-check"></i> Formato PDF de alta qualidade</li>
+                                <li><i class="fas fa-check"></i> Acesso imediato após pagamento</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="checkout-form">
+                    <h2>Informações de Contato</h2>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefone (opcional)</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <h2>Forma de Pagamento</h2>
+                        <div class="payment-options">
+                            <div class="payment-option">
+                                <input type="radio" id="pix" name="payment" value="pix" checked>
+                                <label for="pix">
+                                    <i class="fas fa-qrcode"></i>
+                                    PIX (15% de desconto)
+                                    <span class="payment-price">R$22,86</span>
+                                </label>
+                            </div>
+                            <div class="payment-option">
+                                <input type="radio" id="credit-card" name="payment" value="credit-card">
+                                <label for="credit-card">
+                                    <i class="fas fa-credit-card"></i>
+                                    Cartão de Crédito
+                                    <span class="payment-price">R$26,90</span>
+                                </label>
+                            </div>
+                            <div class="payment-option">
+                                <input type="radio" id="boleto" name="payment" value="boleto">
+                                <label for="boleto">
+                                    <i class="fas fa-money-check-alt"></i>
+                                    Boleto Bancário
+                                    <span class="payment-price">R$26,90</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="order-summary">
+                            <div class="summary-item">
+                                <p>Subtotal</p>
+                                <p>R$26,90</p>
+                            </div>
+                            <div class="summary-item">
+                                <p>Desconto</p>
+                                <p>R$4,04</p>
+                            </div>
+                            <div class="summary-total">
+                                <p>Total</p>
+                                <p>R$22,86</p>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group form-checkbox">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">Concordo com os <a href="termos-uso.html">Termos de Uso</a> e <a href="politica-privacidade.html">Política de Privacidade</a></label>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary checkout-btn">Finalizar Compra</button>
+                        
+                        <div class="secure-checkout">
+                            <i class="fas fa-lock"></i>
+                            <p>Pagamento 100% seguro</p>
+                        </div>
+                        <div class="guarantee">
+                            <i class="fas fa-shield-alt"></i>
+                            <p>Garantia de 30 dias ou seu dinheiro de volta</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">O que nossos clientes dizem</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Este e-book transformou meu casamento. As técnicas de comunicação do capítulo 1 já valeram todo o investimento. Recomendo a todos os casais!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial-1.jpg" alt="Mariana Silva">
+                        <div>
+                            <h4>Mariana Silva</h4>
+                            <p>São Paulo, SP</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Estávamos à beira da separação quando encontramos este guia. O plano de 30 dias nos deu uma estrutura para reconstruir nossa conexão. Hoje estamos mais fortes do que nunca."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial-2.jpg" alt="Carlos e Patrícia Mendes">
+                        <div>
+                            <h4>Carlos e Patrícia Mendes</h4>
+                            <p>Rio de Janeiro, RJ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Os exercícios práticos são simples mas profundamente eficazes. Conseguimos superar anos de ressentimento em poucas semanas seguindo as orientações do capítulo sobre perdão."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial-3.jpg" alt="Roberto Almeida">
+                        <div>
+                            <h4>Roberto Almeida</h4>
+                            <p>Belo Horizonte, MG</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            <div class="faq-items">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Como receberei o e-book após a compra?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Após a confirmação do pagamento, você receberá um e-mail com o link para download do e-book em formato PDF. No caso de pagamento via PIX, o acesso é liberado em até 5 minutos. Para boleto bancário, após a compensação (1-3 dias úteis).</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>O e-book funciona para qualquer tipo de relacionamento?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Embora o foco principal seja em relacionamentos românticos, os princípios e técnicas apresentados no e-book são aplicáveis a diversos tipos de relacionamentos, incluindo namoros, casamentos e até mesmo relações familiares.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Como funciona a garantia de 30 dias?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oferecemos uma garantia incondicional de satisfação. Se você não ficar satisfeito com o conteúdo do e-book por qualquer motivo, basta enviar um e-mail para contato@renovandolacos.com.br dentro de 30 dias após a compra, e faremos o reembolso integral do valor pago.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Preciso ter conhecimentos prévios sobre psicologia ou terapia de casal?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Não! O e-book foi escrito de forma acessível para qualquer pessoa, independentemente de conhecimentos prévios. Todos os conceitos são explicados em linguagem simples e direta, com exemplos práticos e exercícios guiados passo a passo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Renovando Laços</h3>
+                    <p>Conselhos para Reconciliação de Relacionamentos</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
+                        <li><a href="termos-uso.html">Termos de Uso</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-envelope"></i> contato@renovandolacos.com.br</p>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Receba Nossas Dicas</h4>
+                    <p>Inscreva-se para receber conteúdos exclusivos sobre relacionamentos.</p>
+                    <form>
+                        <input type="email" placeholder="Seu e-mail">
+                        <button type="submit" class="btn-secondary">Inscrever</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Renovando Laços. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+</html>

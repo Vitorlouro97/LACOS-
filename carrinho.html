@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - Renovando Laços</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Renovando Laços</h1>
+                <p>Conselhos para Reconciliação de Relacionamentos</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="carrinho.html" class="active btn-carrinho"><i class="fas fa-shopping-cart"></i> Carrinho</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Seu Carrinho</h1>
+            <p>Revise seus itens e prossiga para o pagamento</p>
+        </div>
+    </section>
+
+    <section class="cart">
+        <div class="container cart-container">
+            <div class="cart-items">
+                <h2>Itens no Carrinho</h2>
+                <div class="cart-item">
+                    <div class="item-image">
+                        <img src="images/ebook-cover.jpg" alt="E-book Caminhos para a Reconciliação">
+                    </div>
+                    <div class="item-details">
+                        <h3>E-book: Caminhos para a Reconciliação</h3>
+                        <p class="item-description">Um guia completo com as estratégias mais eficazes para superar crises e renovar o amor em seu relacionamento.</p>
+                        <div class="item-features">
+                            <span><i class="fas fa-file-pdf"></i> Formato PDF</span>
+                            <span><i class="fas fa-download"></i> Download Imediato</span>
+                            <span><i class="fas fa-book"></i> 8 Capítulos Completos</span>
+                        </div>
+                    </div>
+                    <div class="item-price">
+                        <p class="price">R$26,90</p>
+                        <button class="btn-remove"><i class="fas fa-trash"></i> Remover</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cart-summary">
+                <h2>Resumo do Pedido</h2>
+                <div class="summary-item">
+                    <p>Subtotal</p>
+                    <p>R$26,90</p>
+                </div>
+                <div class="summary-item">
+                    <p>Desconto</p>
+                    <p>R$0,00</p>
+                </div>
+                <div class="summary-total">
+                    <p>Total</p>
+                    <p>R$26,90</p>
+                </div>
+                
+                <div class="payment-options">
+                    <h3>Formas de Pagamento Disponíveis</h3>
+                    <div class="payment-option">
+                        <input type="radio" id="pix" name="payment" value="pix" checked>
+                        <label for="pix">
+                            <i class="fas fa-qrcode"></i>
+                            PIX (15% de desconto)
+                        </label>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" id="credit-card" name="payment" value="credit-card">
+                        <label for="credit-card">
+                            <i class="fas fa-credit-card"></i>
+                            Cartão de Crédito
+                        </label>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" id="boleto" name="payment" value="boleto">
+                        <label for="boleto">
+                            <i class="fas fa-money-check-alt"></i>
+                            Boleto Bancário
+                        </label>
+                    </div>
+                </div>
+                
+                <a href="checkout.html" class="btn-primary checkout-btn">Finalizar Compra</a>
+                
+                <div class="secure-checkout">
+                    <i class="fas fa-lock"></i>
+                    <p>Pagamento 100% seguro</p>
+                </div>
+                <div class="guarantee">
+                    <i class="fas fa-shield-alt"></i>
+                    <p>Garantia de 30 dias ou seu dinheiro de volta</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="related-products">
+        <div class="container">
+            <h2 class="section-title">Você também pode gostar</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/ebook-comunicacao.jpg" alt="E-book Comunicação Eficaz no Relacionamento">
+                        <div class="product-tag">Novo</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Comunicação Eficaz no Relacionamento</h3>
+                        <p class="product-description">Aprenda técnicas avançadas para melhorar o diálogo e evitar conflitos.</p>
+                        <div class="product-price">
+                            <p class="price">R$19,90</p>
+                            <button class="btn-secondary add-to-cart">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/ebook-intimidade.jpg" alt="E-book Redescobrindo a Intimidade">
+                        <div class="product-tag">Mais Vendido</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Redescobrindo a Intimidade</h3>
+                        <p class="product-description">Um guia para reconectar-se emocionalmente e fisicamente com seu parceiro.</p>
+                        <div class="product-price">
+                            <p class="price">R$22,90</p>
+                            <button class="btn-secondary add-to-cart">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Renovando Laços</h3>
+                    <p>Conselhos para Reconciliação de Relacionamentos</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
+                        <li><a href="termos-uso.html">Termos de Uso</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-envelope"></i> contato@renovandolacos.com.br</p>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Receba Nossas Dicas</h4>
+                    <p>Inscreva-se para receber conteúdos exclusivos sobre relacionamentos.</p>
+                    <form>
+                        <input type="email" placeholder="Seu e-mail">
+                        <button type="submit" class="btn-secondary">Inscrever</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Renovando Laços. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+</html>
